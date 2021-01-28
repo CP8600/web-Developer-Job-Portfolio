@@ -1,0 +1,162 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+:root {
+    box-sizing: border-box;
+}
+.mainIntro{
+
+    text-align: justify;
+width: 30vw;
+    /* min-width: 25%;  make this size for media query mobile*/
+    overflow: auto;
+       margin-bottom: 10rem;
+       margin-top: 2rem;
+}
+.about{
+    font-weight: bolder;
+    font-size: 3em; 
+
+}
+p{
+
+    font-size: 1.5em;
+margin-top: 10px;
+}
+.me {
+    text-align: center;
+    line-height: 3;
+    background-color: inherit;
+    display: flex;
+    position: fixed;
+    font-family: 'Yusei Magic', sans-serif;
+    width: 100%;
+    overflow: auto;
+    align-items: baseline;
+border-bottom: solid 1px black;
+}
+
+.projectsSpan {
+    font-size: 1em;
+}
+
+.myName {
+
+    font-size: 1.5em;
+}
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 2200px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.header {
+display: none;
+    background-color: rgb(219, 219, 243);
+    height: 30vh;
+    text-align: justify;
+    font-size: 2em;
+    border: solid 1px rgb(106, 106, 226);
+    line-height: 3;
+    overflow: auto;
+    flex-grow: 1;
+
+}
+
+.main {
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: rgb(255, 255, 255);
+
+    height: 100%;
+    width: 90vw;
+
+    padding-top: 10%;
+
+}
+
+.flex-box-wrapper {
+
+
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2em;
+    text-align: center;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    background-image: linear-gradient(white, rgb(251, 239, 168));
+    /* background-image: linear-gradient(burlywood, rgb(255, 154, 154));
+    save this color*/
+}
+
+.flex-box1,
+.flex-box2 {
+    border: white solid 1px;
+    flex-grow: 1;
+    line-height: 50vh;
+}
+
+.flex-box3 {
+    flex-grow: 2;
+    line-height: 50vh;
+}
+
+.mid-flex-box-wrapper {
+    display: flex;
+    font-size: 2em;
+    text-align: center;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    /* 
+    background-image: linear-gradient(burlywood, rgb(255, 154, 154)); */
+    /*save this color*/
+}
+
+.mid-flex-box1,
+.mid-flex-box2 {
+    border: white solid 1px;
+    flex-grow: 1;
+    line-height: 50vh;
+}
+
+.mid-flex-box3 {
+    flex-grow: 2;
+
+    line-height: 50vh;
+}
+
+.footer {
+    width: 100%;
+line-height: 2;
+    text-align:center;
+    background-color: rgb(255, 240, 247);
+    max-height: 300px;
+    height: 5vh;
+}
+.footer a{
+    text-transform: uppercase;
+    font-size:1.1rem;
+    font-family: 'Montserrat', sans-serif;
+color: black;
+margin-left: 10px;
+margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+  float: left;
+}
+
+.footer a:hover{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
