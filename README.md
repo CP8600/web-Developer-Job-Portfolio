@@ -1,3 +1,0 @@
-# webDeveloperjob
-
-Just some web
