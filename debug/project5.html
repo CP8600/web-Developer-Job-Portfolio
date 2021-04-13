@@ -1,0 +1,101 @@
+<!-- christopher perez
+project5
+april 12 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="project5.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <p id="p"></p>
+      </div>
+    </div>
+
+    <script>
+      const askName = prompt("what is your name?"); // prompts asks users name in var askName
+      let proceed = confirm("Do you want to proceed?") ? true : false; // confirms if user wants to proceed stored in proceed var
+      const p = document.getElementById("p");
+      const age = prompt("How old are you?"); //prompts gets the users age
+
+      if (age >= 18) {
+        //if statement for finding out if user age is 18 or greater
+
+        p.textContent = askName + " " + "is legal";
+        console.log("user is over 18"); //if user is over 18
+      } else {
+        p.textContent = askName + " " + "is not legal";
+        console.log("user is not over 18"); // if user is not over 18
+      }
+
+      let favSport = prompt("What is your favorite sport?", " ");
+
+      //asks user for favorite sport... i put in a few options for football,basketball, or baseball
+      if (favSport === "football" || "basketball" || "baseball") {
+        let team = prompt("What is your favorite?", favSport + " team?");
+        //propts user for favorite team from sport
+        console.log(team);
+      }
+
+      if (favSport === "football") {
+        //alerts different message for each favSport
+        alert("Touchdown!");
+      } else if (favSport === "basketball") {
+        alert("3 points at the Buzzer!");
+      } else if (favSport === "baseball") {
+        alert("Homerun!");
+      } else if (favSport === "" || favSport === null) {
+        alert("Canceled");
+      } else {
+        alert("Do you even play sports");
+      }
+
+      console.log(askName + " " + "is" + " " + age);
+
+      console.log(proceed);
+
+      console.log(askName);
+
+      console.log(favSport);
+
+      /*    let secret = 7;
+      // prompt("enter a number 1- 10");
+      let guess = prompt("enter a number 1- 10");
+      let getGuess = parseInt(guess);
+      let i = 0 */
+      /* 
+      while (guess != secret) {
+        guess
+        if (guess == secret) {
+
+          console.log("You guessed the correct number.");
+          prompt("Correct");
+        }
+      } 
+
+      while (guess) {
+        guess;
+        i++
+      }
+      if (guess === secret) {
+        console.log("correct");
+      }
+        var text = "";
+      var i = 0;
+      while (i < 5) {
+        text += "<br>The number is " + i;
+        i++;
+        if (i == 3) {
+          break;
+        }
+      }
+      console.log(guess);
+      console.log(secret); */
+    </script>
+  </body>
+</html>
