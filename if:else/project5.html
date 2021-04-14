@@ -63,39 +63,68 @@ april 12 -->
 
       console.log(favSport);
 
-      /*    let secret = 7;
-      // prompt("enter a number 1- 10");
-      let guess = prompt("enter a number 1- 10");
-      let getGuess = parseInt(guess);
-      let i = 0 */
-      /* 
-      while (guess != secret) {
-        guess
-        if (guess == secret) {
+      let secret = 7;
 
-          console.log("You guessed the correct number.");
-          prompt("Correct");
+      while (prompt("enter a number 1- 10") != secret) {
+        alert("wrong number, try 7");
+      }
+      if (true) {
+        console.log(secret + " " + "is correct");
+      }
+      let secret = 7;
+
+      do {
+        console.log("7 is correct");
+      } while (prompt("enter a number 1- 10") != secret);
+
+      const byThree = (num) => {
+        const divBy = parseInt(num / 3);
+
+        return num === divBy * 3;
+      };
+
+      for (let i = 0; i <= 31; i++) {
+        if (byThree(i)) {
+          console.log(i);
         }
-      } 
+      }
 
-      while (guess) {
-        guess;
-        i++
+      const byThree = (num) => {
+        const divs = parseInt(num / 3);
+
+        return num === divs * 3;
+      };
+
+      for (let i = 0; i <= 31; i++) {
+        if (byThree(i)) {
+          console.log(i);
+        }
       }
-      if (guess === secret) {
-        console.log("correct");
-      }
-        var text = "";
-      var i = 0;
-      while (i < 5) {
-        text += "<br>The number is " + i;
-        i++;
-        if (i == 3) {
+      let house = prompt(
+        "Which is your Hogwart House (Gryffindor, Slytherin, Ravenclaw, Hufflepuff)"
+      );
+
+      switch (house) {
+        case "Gryffindor":
+          console.log("Gryffindor get hype");
           break;
-        }
+        case "Slytherin":
+          console.log("Slytherin get hype");
+          break;
+
+        case "Ravenclaw":
+          console.log("Ravenclaw get hype");
+          break;
+
+        case "Hufflepuff":
+          console.log("Hufflepuff get hype");
+          break;
+
+        default:
+          console.log(
+            "Who is Harry Potter?, hint:(try to capitalize house name)"
+          );
       }
-      console.log(guess);
-      console.log(secret); */
     </script>
   </body>
 </html>
