@@ -1,20 +1,40 @@
-<!DOCTYPE html>
+<!-- Christopher perez
+April 20 -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="js.css" />
-    <title>Document</title>
+    <title>Midtem</title>
   </head>
   <body>
-    <h2 id="h2">d</h2>
+    <main class="main">
+    <h2  class="h2" id="h2">Calculator</h2>
 
     <input type="text" id="x" />
+    <div class="dropdown">
 
-    <input type="text" id="y" />
-    <button type="submit" onclick="math()">submit</button>
+      <select name="operator" id="operator">
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+        <option value="modulos">%</option>
+        <option value="exponents">**</option>
+      </select>
 
-    <script src="js.js"></script>
+      <input type="text" id="y" />
+      <button type="submit" onclick="math()">submit</button>
+    </div>
+
+    <h3 id="gradeScore">Grade</h3>
+
+    <input type="text" id="grade" placeholder="enter grade score" />
+    <button id="getGrade" onclick="checkGrades()">Check Score</button>
+
+    </main>
+
+    <script src="switch.js"></script>
   </body>
 </html>
