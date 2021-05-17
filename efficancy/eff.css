@@ -1,0 +1,42 @@
+*,
+::before,
+::after {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.eff {
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.showEff {
+
+    text-align: center;
+    position: sticky;
+    left: 40%;
+    top: 40%;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    border: solid white 1px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
